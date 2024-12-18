@@ -46,5 +46,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 =======
-# bayerische-app
+# tesla-app
 >>>>>>> 700d2e9ed3a7777707a58f3b89f7e2fc51470dce
