@@ -20,18 +20,18 @@ function Home() {
         rightBtnText="Existing Inventory"
       />
       <Section
-        title="Model 3"
-        description="Order Online for Touchless Delivery"
-        backgroundImg="model-3.jpg"
-        leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
+        title="KC DOMCIA <333"
+        description="BOZE JAK JA CIEBIE KC"
+        backgroundImg="domciaqueen1.png"
+        leftBtnText="Nie da sb zlozyc order"
+        rightBtnText="Bo jestes bezcenna oraz moja"
       />
       <Section
-        title="Model X"
-        description="Order Online for Touchless Delivery"
-        backgroundImg="model-x.jpg"
-        leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
+        title="JESTES JAK...."
+        description="pyszna kawcia z rana (potrzebuje Cb codziennie)"
+        backgroundImg="domciaqueen2.png"
+        leftBtnText="BUZIACZKI ORAZ KC :****"
+        rightBtnText="DOMCIA DZWONI ŁUP ŁUP ŁUP"
       />
       <Section
         title="Lowest Cost Solar Panels in America"
@@ -62,4 +62,5 @@ export default Home;
 
 const Container = styled.div`
   height: 100vh;
+  color: #393c41;
 `;

@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { selectCars } from "../features/car/carSlice";
+import { useSelector } from "react-redux";
 
 function Header() {
   const [burgerState, setBurgerState] = useState(0);
+  const cars = useSelector(selectCars);
 
   return (
     <Container>
@@ -12,17 +15,22 @@ function Header() {
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
-        <a href="#">Model S</a>
+        {/* {cars && cars.map((car, index) => <a href="#">{car}</a>)} */}
+        <a href="#">Pojazdy</a>
 
-        <a href="#">Model 3</a>
+        <a href="#">Energia</a>
 
-        <a href="#">Model X</a>
+        <a href="#">Ładowanie</a>
 
-        <a href="#">Model Y</a>
+        <a href="#">Odkrywaj</a>
+
+        <a href="#">Sklep</a>
+
+        <a href="#">Pozdro</a>
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        {/* <a href="#">Shop</a>
+        <a href="#">Tesla Account</a> */}
         <CustomMenu onClick={() => setBurgerState(true)} />
       </RightMenu>
       <BurgerNav show={burgerState}>
@@ -68,6 +76,7 @@ const Container = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
+  color: #393c41;
 `;
 
 const Menu = styled.div`
@@ -75,12 +84,15 @@ const Menu = styled.div`
   align-items: center;
   justify-content: center;
   flex: 1;
+  margin-right: 3vw;
+  color: #393c41;
 
   a {
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
+    color: #393c41;
   }
 
   @media (max-width: 768px) {
